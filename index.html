@@ -3,103 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>:root{color-scheme:light}body{margin:0}</style>
-<title>Autonomus Society Privacy Policy</title>
+<title>Autonomus Society</title>
+<meta name="description" content="Autonomus Society is an independent medieval society simulation game in development. This site also describes the studio's private Pinterest reference tool.">
+<link rel="icon" href="icono_autonomus_society.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500&display=swap">
 <style>
-/* Layout: a single readable legal column, two language sections, quiet stone-and-moss palette from the game's terrain */
+/* Quiet stone-and-moss palette taken from the game's terrain; one readable column */
 :root {
   --bg: #f3f1ea; --fg: #2b2a26; --muted: #66625a; --line: #d8d3c6; --accent: #4e6a3f; --panel: #ebe7dc;
   --display: "Source Serif 4", Georgia, "Times New Roman", serif;
   --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #1d1f1b; --fg: #e9e6dc; --muted: #a8a397; --line: #3a3d35; --accent: #9dbb86; --panel: #262923; color-scheme: dark } }
 :root[data-theme="dark"] { --bg: #1d1f1b; --fg: #e9e6dc; --muted: #a8a397; --line: #3a3d35; --accent: #9dbb86; --panel: #262923; color-scheme: dark }
-body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 64px; }
-main { max-width: 680px; margin: 0 auto; display: grid; gap: 40px; }
-header { display: grid; gap: 8px; border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding: 48px max(16px, env(safe-area-inset-right, 0px)) 64px max(16px, env(safe-area-inset-left, 0px)); }
+main { max-width: 720px; margin: 0 auto; display: grid; gap: 44px; }
+header { display: grid; grid-template-columns: 112px 1fr; gap: 24px; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
+header img { width: 112px; height: 112px; border-radius: 22px; image-rendering: pixelated; }
 .eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
-h1 { font-family: var(--display); font-weight: 600; font-size: clamp(28px, 5vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; }
-.meta { color: var(--muted); font-size: 14px; margin: 0; }
+h1 { font-family: var(--display); font-weight: 600; font-size: clamp(30px, 6vw, 44px); line-height: 1.1; margin: 4px 0 6px; }
+.lead { margin: 0; color: var(--muted); }
 section { display: grid; gap: 14px; }
-h2 { font-family: var(--display); font-weight: 600; font-size: 22px; margin: 0; text-wrap: balance; }
-h3 { font-size: 15px; font-weight: 500; margin: 8px 0 0; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 24px; margin: 0; }
 p, ul { margin: 0; }
 ul { padding-left: 20px; display: grid; gap: 6px; }
-.summary { background: var(--panel); border-left: 3px solid var(--accent); padding: 14px 16px; border-radius: 2px; }
-.lang { border-top: 1px solid var(--line); padding-top: 32px; }
+.card { background: var(--panel); border-left: 3px solid var(--accent); padding: 16px 18px; border-radius: 2px; display: grid; gap: 10px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.facts div { border: 1px solid var(--line); padding: 10px 12px; border-radius: 2px; }
+.facts b { display: block; font-size: 13px; color: var(--muted); font-weight: 500; }
 a { color: var(--accent); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--muted); font-size: 14px; display: grid; gap: 6px; }
+@media (max-width: 520px) { header { grid-template-columns: 1fr; } header img { width: 88px; height: 88px; } }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <span class="eyebrow">Autonomus Society · Pinterest API app</span>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 2 November 2026</p>
+    <img src="icono_autonomus_society.png" alt="Autonomus Society icon: a stone cottage on a patch of grass, in isometric pixel art">
+    <div>
+      <span class="eyebrow">Independent game in development</span>
+      <h1>Autonomus Society</h1>
+      <p class="lead">A medieval society that runs itself. You watch it grow from a small camp into a kingdom, and step in as its ruler only when you choose to.</p>
+    </div>
   </header>
 
   <section>
-    <p class="summary">This app reads only the developer's own Pinterest boards, to show them as a visual style reference while making the art of the game <em>Autonomus Society</em>. It does not post, does not read other people's data, does not share anything and does not use Pinterest images to train AI models.</p>
+    <h2>The game</h2>
+    <p>Autonomus Society is a simulation game set in medieval England. Villagers gather, build, farm and trade on their own; a council decides what to build next and explains why. The weather, seasons and terrain are simulated, and events grow out of them rather than from random rolls. The art is isometric pixel art drawn at human scale.</p>
+    <div class="facts">
+      <div><b>Genre</b>Society and city-building simulation</div>
+      <div><b>Status</b>In development (beta)</div>
+      <div><b>Platform</b>PC, planned for Steam</div>
+      <div><b>Engine</b>Godot</div>
+    </div>
   </section>
 
-  <section>
-    <h2>Who runs this app</h2>
-    <p>Autonomus Society is an independent video game in development. The Pinterest app of the same name is a private tool used only by the game's developer and art team. It is not offered to the public and no one else can sign in to it.</p>
+  <section id="pinterest-app">
+    <h2>Our Pinterest app</h2>
+    <div class="card">
+      <p><b>Autonomus Society Reference Board</b> is a private, read-only tool used only by the game's developer and art team.</p>
+      <ul>
+        <li>It reads the boards of the developer's own Pinterest account (<code>boards:read</code>, <code>pins:read</code>).</li>
+        <li>It shows those saved pins as a visual style reference panel inside our private art editor, next to the pixel art we are making.</li>
+        <li>It never creates, edits or deletes pins or boards, and never reads other users' data.</li>
+        <li>Pin images are never used to train or evaluate AI models and never become part of the game.</li>
+        <li>No data is sold or shared. The access token is stored encrypted and can be revoked at any time.</li>
+      </ul>
+    </div>
+    <p>Full details: <a href="privacy/">Privacy Policy</a>.</p>
   </section>
 
-  <section>
-    <h2>What data the app uses</h2>
-    <ul>
-      <li>An access token for the developer's own Pinterest account, with read-only permissions (<code>boards:read</code>, <code>pins:read</code>).</li>
-      <li>The titles, descriptions, image links and links of the pins saved on the developer's own boards.</li>
-    </ul>
-    <p>The app does not collect data from any other Pinterest user, and it does not ask for email addresses, passwords, location, payment details or any other personal information.</p>
+  <section lang="es">
+    <h2>En español</h2>
+    <p>Autonomus Society es un juego independiente de simulación de una sociedad medieval que se gobierna sola; el jugador es el rey y solo interviene si quiere. Nuestra app de Pinterest es una herramienta privada y de solo lectura: muestra los tableros del propio desarrollador como referencia visual mientras se dibuja el arte del juego. No publica, no lee datos de otras personas, no comparte nada y no usa imágenes de Pinterest para entrenar modelos de IA. Detalle en la <a href="privacy/">Política de privacidad</a>.</p>
   </section>
 
-  <section>
-    <h2>How the data is used</h2>
-    <ul>
-      <li>Pins are shown as a reference panel inside the team's private asset editor, next to the game art being made.</li>
-      <li>Pin images are never used to train, fine-tune or evaluate AI models, and they never become part of the game.</li>
-      <li>The app never creates, edits or deletes pins or boards.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Storage and security</h2>
-    <p>The access token is kept in an encrypted secret store (Google Cloud Secret Manager) and is only read into memory when the editor asks for the board. Pin data is cached on the developer's own computer only for as long as it is needed to show the reference panel, and it is not sent to anyone else.</p>
-  </section>
-
-  <section>
-    <h2>Sharing</h2>
-    <p>No data is sold, rented or shared with third parties.</p>
-  </section>
-
-  <section>
-    <h2>Removing access</h2>
-    <p>The developer can revoke the app's access at any time from Pinterest's settings for connected apps. When access is revoked, the stored token is deleted.</p>
-  </section>
-
-  <section>
-    <h2>Changes and contact</h2>
-    <p>If this policy changes, the new version will be published on this page with a new effective date. Questions about this app can be sent to the developer through the Autonomus Society Pinterest account.</p>
-  </section>
-
-  <section class="lang" lang="es">
-    <span class="eyebrow">Español</span>
-    <h2>Política de privacidad</h2>
-    <p class="summary">Esta aplicación solo lee los tableros de Pinterest del propio desarrollador, para mostrarlos como referencia visual de estilo mientras se hace el arte del juego <em>Autonomus Society</em>. No publica, no lee datos de otras personas, no comparte nada y no usa imágenes de Pinterest para entrenar modelos de IA.</p>
-    <h3>Datos que usa</h3>
-    <p>Un token de acceso de solo lectura de la cuenta del desarrollador (<code>boards:read</code>, <code>pins:read</code>) y los Pines guardados en sus propios tableros: título, descripción y enlaces. No recoge datos de otros usuarios ni información personal.</p>
-    <h3>Para qué</h3>
-    <p>Solo para mostrar esos Pines como panel de referencia dentro del editor privado del equipo. Nunca entran al juego ni a un entrenamiento de IA, y la app nunca crea, cambia ni borra Pines o tableros.</p>
-    <h3>Guarda y seguridad</h3>
-    <p>El token se guarda cifrado en Google Cloud Secret Manager y solo se lee en memoria. No se vende ni se comparte ningún dato. El acceso se puede revocar en cualquier momento desde la configuración de Pinterest; al revocarlo, el token se borra.</p>
-  </section>
+  <footer>
+    <span>© 2026 Autonomus Society. All rights reserved.</span>
+    <span>Contact: <a href="https://github.com/agusmurga">github.com/agusmurga</a> · <a href="privacy/">Privacy Policy</a></span>
+  </footer>
 </main>
 </body>
 </html>
